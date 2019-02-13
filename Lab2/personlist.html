@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <title>lab2</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  </head>
+  
+<body>
+
+  <h1>Name</h1>
+  <input id = "personInput" placeholder="Input Name" type="text"></input>
+  <button type="button"onclick="personList()" >Add person</button>
+  <!--when button is pressed, personList function is trigreed.
+!-->
+  <ol id="personList"></ol>
+
+  <script>
+  	function personList(){
+  var person = document.getElementById("personInput").value;
+  //personInput is connectiong with input element in HTML, this stores the value.
+  var text = document.createTextNode(person);
+  //persons from personInput are stored in variable Text.
+  var newperson = document.createElement("li");
+  newperson.appendChild(text)
+  //when clicked, it will append the persons from newpersons in li
+  document.getElementById("personList").appendChild(newperson);
+  // we will get ol list and append to newperson
+
+}
+
+  </script>
+</body>
+</html>
