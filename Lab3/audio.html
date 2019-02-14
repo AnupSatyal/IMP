@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Audio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="lab1.js"></script>
+</head>
+<body>
+ <div class="container">
+  <h3>Godfather Theme Music</h3>
+  <audio src="godfather.mp3" id="mp3"></audio>
+  <button onclick="play()">play</button>
+  <button onclick="pause()">pause</button>
+  <input type="range" list="tickmarks" id="volume">
+<datalist id="tickmarks">
+  <option value="0">
+  <option value="10">
+  <option value="20">
+  <option value="30">
+  <option value="40">
+  <option value="50">
+  <option value="60">
+  <option value="70">
+  <option value="80">
+  <option value="90">
+  <option value="100">
+</datalist>
+</div>
+
+<script type="text/javascript">
+  var audio = document.getElementById('mp3');
+var volume = document.getElementById('volume');
+
+function play() {
+  audio.play();
+}
+
+function pause() {
+  audio.pause();
+}
+
+function changeVolume() {
+  audio.volume = volume.value;
+}
+
+volume.addEventListener("input", changeVolume);
+
+</script>
+</body>
+</html>

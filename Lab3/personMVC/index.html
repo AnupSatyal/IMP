@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="../Lab1/lab1.js"></script>
+    <script src="script.js"></script>
+    <script src="Person.js"></script>
+    <script src="personmodel.js"></script>
+    <script src="personviewcontroller.js"></script>
+    <title>MVC</title>
+  </head>
+  <body>
+    <div class="container">
+    <h3>Add a person: MVC </h3>
+    <p>
+      <input id="firstNameField" type="text"></input>
+      <button onclick="addPerson();">Add person</button>
+    </p>
+    <div>
+      <ul id="ul">
+        <li id="resultBox"></li>
+      </ul>
+    </div> 
+  
+    <script type="text/javascript">
+        document.write("<p>"+localStorage.Username+" is stored in the localStorage");
+    </script>
+  </div>
+  </body>
+</html>
