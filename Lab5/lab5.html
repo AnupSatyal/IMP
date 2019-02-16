@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>lab5</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script type="text/javascript" src="lab5.js"></script>
+</head>
+<body>
+	 <div class="container">
+	 	<h3>Answers</h3>
+          <p><strong>What you can do with the jQuery?</strong> </p>
+          <p>jQuery simply makes use of javascript easier by simplyfing DOM manipulation and AJAX calls.</p>
+          <br>
+          <p><strong>How it can help you as a developer?</strong> </p>
+          <p>It's wasy to use and helps to make application faster using AJAX and also use aniimations </p>
+          <br>
+          <p><strong>If you think our earlier participant list app, in what kind of issues you could use jQuery?</strong></p>
+          <p>It could be use in getting the input value from the user, appending the list to the result div element, tracking if the user has clicked the button etc.</p>
+          <br>
+          <p> <strong>What are CDNs? What kind of benefits you get if you use them? </strong> </p>
+          <p>It stands for "Content Delivery Network" and it serves content to the end-users with high availability and performance. </p>
+     </div>
+
+    <hr>
+
+	<div class="container">
+		<h3>Person lists</h3>
+		<p>You can load the list of persons with their email address using AJAX. Click the button below to make that happen! </p>
+		<button class="btn btn-primary" onclick="loadPersons()" id="loadBtn">Load</button>
+		<div id="result">
+			<table class="table table-hover">
+				<thead id="tdhead">
+
+				</thead>
+				<tbody id="tdbody">
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
