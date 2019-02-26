@@ -1,4 +1,3 @@
-
 function personList(){
   var person = document.getElementById("personInput").value;
   //personInput is connectiong with input element in HTML, this stores the value.
